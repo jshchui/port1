@@ -20,4 +20,11 @@ $(document).ready (function() {
 	$(function(){
 	  $('.content-box').mixItUp();
 	});
+
+
+  var url = window.location.href;
+  var container = document.getElementById('categories');
+  if( url.search( 'index' ) > 0 ) {
+      container.style.display = "block";
+  }
 });

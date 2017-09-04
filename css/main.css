@@ -211,34 +211,6 @@ button:focus{
 	float:right;
 }
 
-/*
-.allb {
-	position: absolute;
-	top:10em;
-	left:25em;
-	text-align:right;
-}
-
-.uxb {
-	position: absolute;
-	text-align:right;
-	top:13em;
-	left:25em;
-}
-
-.webb {
-	position: absolute;
-	text-align:right;
-	top:16em;
-	left:19em;
-}
-
-.productb {
-	position: absolute;
-	text-align:right;
-	top:19em;
-	left:20em;
-}*/
 
 .content-box .mix {
 	display:none;
