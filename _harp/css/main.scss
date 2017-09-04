@@ -307,6 +307,12 @@ button:focus{
     	background-size:cover;
     }
 
+    .werewolf:hover {
+      background: url(../img/werewolf.jpg);
+      background-repeat: no-repeat;
+    	background-size:cover;
+    }
+
   	.nauticats:hover {
   		background: url(../img/nauticalcats.jpg);
   		background-repeat: no-repeat;
@@ -510,8 +516,14 @@ button:focus{
   }
 }
 
+.flex {
+  display: flex;
+}
+
 .project-content-img-spacing {
   margin-top: 2em;
+  box-sizing: border-box;
+    padding: 0.5em;
 }
 
 .project-content {
