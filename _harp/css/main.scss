@@ -480,6 +480,23 @@ button:focus{
   background-size:cover;
 }
 
+.werewolfbanner {
+  background: url(../img/werewolf/werewolfbanner.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  min-height: calc(6em + 150px);
+}
+
+.solutionbanner {
+  background: url(../img/solution/solution.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  min-height: calc(6em + 150px);
+
+}
+
 .me img{
 	width:20%;
 }
@@ -516,9 +533,15 @@ button:focus{
   }
 }
 
+.project-wrapper {
+  margin: 2em 18% 2em 18%;
+}
+
 .flex {
   display: flex;
 }
+
+
 
 .project-content-img-spacing {
   margin-top: 2em;
@@ -533,6 +556,11 @@ button:focus{
 	margin-right:12%;
 	margin-bottom:2em;
 	overflow:hidden;
+
+  .project-wrapper {
+    margin: 2em 0;
+    overflow:hidden;
+  }
 }
 
 .project-content h1{
@@ -561,8 +589,24 @@ button:focus{
 }
 
 .project-content a {
-	color:#000000;
-	font-weight:bolder;
+	// color:#000000;
+	// font-weight:bolder;
+}
+
+.redirectButton {
+  padding: 1em 2em;
+  border: solid thin black;
+  margin: 1em 2em;
+  min-width: 150px;
+  color: #000;
+  display: inline-block;
+  text-align: center;
+  transition: 0.4s all;
+}
+
+.redirectButton:hover {
+  color: #FFF;
+  background-color: #000;
 }
 
 
@@ -720,11 +764,11 @@ img.me {
 }
 
 .backtotop p {
-	margin-top:0;
+	margin-top:5px;
 	text-align: center;
 	padding-left:2px;
 	color: #FFFFFF;
-	font-size: 3em;
+	font-size: 2em;
 }
 
 .backtotop p:hover {
@@ -801,7 +845,7 @@ img.me {
 	}
 
 	#categories{
-
+    margin-top: 5.5em;
 		display:none;
 	}
 
