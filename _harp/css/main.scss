@@ -8,7 +8,6 @@
 body {
 	background-color: #000000;
 	margin:1px;
-
 	position: relative;
 	min-height:90vh;
 }
@@ -16,7 +15,6 @@ body {
 h1 {
   font-family: 'Quicksand', serif;
   text-transform: uppercase;
-  // font-weight:bolder;
   font-size:1.0em;
   margin: 0;
   color:#FFFFFF;
@@ -26,7 +24,6 @@ h1 {
 h2 {
   font-family: 'Montserrat', serif;
   text-transform: uppercase;
-  // font-weight:bolder;
   font-size:0.9em;
   margin: 0;
   color:#FFFFFF;
@@ -77,6 +74,12 @@ nav {
   	border-width:1px;
   	padding: 0.5em 5em 0.5em 5em;
   	position:relative;
+
+    &:hover .top, &:hover .bottom {
+      width:40%;
+    	background-color:#FFFFFF;
+    	left:30%;
+    }
   }
 }
 
@@ -88,12 +91,6 @@ nav {
 	top: 1.5em;
 }
 
-
-nav a:hover .top, nav a:hover .bottom {
-	width:40%;
-	background-color:#FFFFFF;
-	left:30%;
-}
 
 .title {
 	padding-top: 1.5em;
@@ -107,23 +104,9 @@ nav a:hover .top, nav a:hover .bottom {
 	left:-0.3em;
 	top:0.8em;
 
-}
-.myLogo img{
-	width:3em;
-}
-
-/*Lines*/
-.top {
-	position:absolute;
-	width:0%;
-	top:0;
-	left:0;
-	background-color:#FFFFFF;
-	height:1px;
-	-moz-transition: all 0.3s ease 0s;
-  	-webkit-transition: all 0.3s ease 0s;
-  	-ms-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
+  img {
+    width: 3em;
+  }
 }
 
 .bottom {
@@ -137,21 +120,6 @@ nav a:hover .top, nav a:hover .bottom {
   	-webkit-transition: all 0.3s ease 0s;
   	-ms-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-}
-
-.left{
-	position:absolute;
-	height:50%;
-	bottom:0;
-	left:0;
-	background-color:#FFFFFF;
-	width:1px;
-	-moz-transition: all 0.3s ease 0s;
-  	-webkit-transition: all 0.3s ease 0s;
-  	-ms-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-	margin-bottom:6px;
-
 }
 
 .right {
@@ -181,7 +149,7 @@ button{
   margin-right:1em;
 
 
- font-family: 'Quicksand', serif;
+  font-family: 'Quicksand', serif;
   text-transform: uppercase;
   font-weight:lighter;
   font-size:0.7em;
@@ -191,19 +159,15 @@ button{
   transition: all 0.3s;
 
   outline: 1px solid #000;
-}
 
-button:hover {
-	outline: 1px solid #999;
-}
+  &:hover {
+    outline: 1px solid #999;
+  }
 
-button.active{
-	background-color: #FFF;
-	color:#000;
-}
-
-button:focus{
-
+  &.active {
+    background-color: #FFF;
+  	color:#000;
+  }
 }
 
 #categories {
@@ -212,15 +176,12 @@ button:focus{
   display:none;
 }
 
-
 .content-box .mix {
 	display:none;
-
 }
 
 .content-box .mix:after{
   content: attr(data-myorder);
-
 }
 
 .content-box .mix:before{
@@ -229,13 +190,10 @@ button:focus{
 
 .content-box {
 	display: block;
-
 	max-width: 75em;
-  	margin: 0 auto;
-
-
-  	overflow:hidden;
-  	min-height:85vh;
+	margin: 0 auto;
+	overflow:hidden;
+	min-height:85vh;
 }
 
 .container {
@@ -273,112 +231,113 @@ button:focus{
 
 	border-style:solid;
 	border-width:1px;
-  	border-color:#000000;
+	border-color:#000000;
 
-  	outline-style:solid;
-  	outline-width:1px;
-  	outline-color:#FFFFFF;
+	outline-style:solid;
+	outline-width:1px;
+	outline-color:#FFFFFF;
 
-  	padding-top:10vh;
-  	padding-bottom:10vh;
+	padding-top:10vh;
+	padding-bottom:10vh;
 
 
-  	background: url(../img/black.jpg);
-  	background-repeat: no-repeat;
-  	background-size:cover;
+	background: url(../img/black.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
 
-  	position:relative;
+	position:relative;
 
-  	-moz-transition: background-image 0.3s ease 0s;
-  	-webkit-transition: background-image 0.3s ease 0s;
-  	-ms-transition: background-image 0.3s ease 0s;
-  	transition: background-image 0.2s ease-in-out;
+	-moz-transition: background-image 0.3s ease 0s;
+	-webkit-transition: background-image 0.3s ease 0s;
+	-ms-transition: background-image 0.3s ease 0s;
+	transition: background-image 0.2s ease-in-out;
+
+  &:hover .logos {
+    opacity:0.0;
+  }
+
+  &:hover p {
+    color:#000000;
+  }
+
+  p {
+    margin: 3em 0;
+  }
 }
 
-	.indigo:hover{
- 		background: url(../img/indigolight.jpg);
- 		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.indigo:hover{
+	background: url(../img/indigolight.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-    .fanswifi:hover {
-      background: url(../img/fanswifi.jpg);
-      background-repeat: no-repeat;
-    	background-size:cover;
-    }
+.fanswifi:hover {
+  background: url(../img/fanswifi.jpg);
+  background-repeat: no-repeat;
+	background-size:cover;
+}
 
-    .werewolf:hover {
-      background: url(../img/werewolf.jpg);
-      background-repeat: no-repeat;
-    	background-size:cover;
-    }
+.werewolf:hover {
+  background: url(../img/werewolf.jpg);
+  background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.nauticats:hover {
-  		background: url(../img/nauticalcats.jpg);
-  		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.nauticats:hover {
+	background: url(../img/nauticalcats.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.triangle:hover {
-  		background: url(../img/triangle.jpg);
-  		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.triangle:hover {
+	background: url(../img/triangle.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.lightcubes:hover {
-  		background: url(../img/lightcubes.jpg);
-  		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.lightcubes:hover {
+	background: url(../img/lightcubes.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.selfbrand:hover {
-  		background: url(../img/selfbrand.jpg);
-  		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.selfbrand:hover {
+	background: url(../img/selfbrand.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.palette:hover {
-  		background: url(../img/palette.jpg);
-  		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.palette:hover {
+	background: url(../img/palette.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.maserati:hover {
-  		background: url(../img/maserati.jpg);
-  		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.maserati:hover {
+	background: url(../img/maserati.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.brainshield:hover {
-		background: url(../img/brainshield.jpg);
-  		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.brainshield:hover {
+  background: url(../img/brainshield.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.solution:hover {
-  		background: url(../img/solution.jpg);
-  		background-repeat: no-repeat;
-  		background-size:cover;
-  	}
+.solution:hover {
+	background: url(../img/solution.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
 
-  	.logos {
-  		-moz-transition: background-image 0.3s ease 0s;
-  		-webkit-transition: background-image 0.3s ease 0s;
-  		-ms-transition: background-image 0.3s ease 0s;
-  		transition:all 0.3s ease 0s;
-  	}
+.logos {
+	-moz-transition: background-image 0.3s ease 0s;
+	-webkit-transition: background-image 0.3s ease 0s;
+	-ms-transition: background-image 0.3s ease 0s;
+	transition:all 0.3s ease 0s;
+}
 
-  	.project:hover .logos {
-  		opacity:0.0;
-  	}
-
-  	.project:hover  p {
-  		color:#000000;
-  	}
-
- 	.project p {
- 		margin:3em 0;
- 	}
 
 .top-c {
 	position:absolute;
@@ -561,20 +520,11 @@ button:focus{
     margin: 2em 0;
     overflow:hidden;
   }
-}
 
-.project-content h1{
-	margin-top:1em;
-	color:#000000;
-}
-.project-content h2 {
-	margin-top:1em;
-	color:#000000;
-}
-
-.project-content h3 {
-	margin-top: 2em;
-	color:#000000;
+  h1, h2, h3 {
+    margin-top:1em;
+  	color:#000000;
+  }
 }
 
 .project-content p{
@@ -589,7 +539,7 @@ button:focus{
 }
 
 .project-content a {
-	// color:#000000;
+	color:#000000;
 	// font-weight:bolder;
 }
 
@@ -602,13 +552,12 @@ button:focus{
   display: inline-block;
   text-align: center;
   transition: 0.4s all;
-}
 
-.redirectButton:hover {
-  color: #FFF;
-  background-color: #000;
+  &:hover {
+    color: #FFF;
+    background-color: #000;
+  }
 }
-
 
 
 .project-content img {
@@ -828,21 +777,22 @@ img.me {
 	nav {
 		margin-left:0;
 		width:100%;
-	}
-	nav a {
-		text-align:center;
-		width:100%;
+
+    a {
+      text-align:center;
+      width: 100%;
+
+      &:hover .top, &:hover .bottom {
+        width:25%;
+  			background-color:#FFFFFF;
+  			left:37.5%;
+      }
+    }
 	}
 
-		nav a:hover .top, nav a:hover .bottom {
-			width:25%;
-			background-color:#FFFFFF;
-			left:37.5%;
-		}
-
-		.right {
-			opacity:0;
-		}
+	.right {
+		opacity:0;
+	}
 
 	.name {
 		opacity:0;
@@ -867,20 +817,10 @@ img.me {
 
 	.content-container {
 		margin:0.8em 0;
-		/*height:15em;*/
 	}
-
-	.project {
-		padding:6em 0;
-	}
-/*
-	.project-content {
-		margin-left:1%;
-		margin-right:1%;
-	}*/
-
 
 	.project, .project:hover{
+    padding: 6em 0;
 		height:15em;
 		background-position: 0 33%;
 	}

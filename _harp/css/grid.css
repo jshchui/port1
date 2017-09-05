@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-
-
 [class^='col-'] {
   float:left;
   padding:0;
@@ -52,9 +50,4 @@
 	.col-1of3, .col-2of3, .col-1of2 {
 		width:100%;
 	}
-
-
-
 }
-
-
