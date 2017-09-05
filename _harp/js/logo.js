@@ -22,9 +22,9 @@ $(document).ready (function() {
 	});
 
 
-  var url = window.location.href;
   var container = document.getElementById('categories');
-  if( url.search( 'index' ) > 0 ) {
+
+	if( document.location.pathname.length < 12 ) {
       container.style.display = "block";
   }
 });
