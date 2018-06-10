@@ -11,6 +11,7 @@
 
 		<link href="css/grid.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
+		<link href="css/lightbox.css" rel="stylesheet">
 
 		<!--<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>-->
 		<script src="js/jquery.js"></script>
@@ -26,6 +27,7 @@
 
 
 	<body style="overflow-y:scroll">
+		<script src="js/lightbox.js"></script>
 		<div class= "title">
 			<nav>
 				<div class="myLogo">
@@ -33,9 +35,7 @@
 				</div>
 
 				<a href="index.html">Works
-					<!-- <div class="top"></div> -->
 					<div class="bottom"></div>
-					<!-- <div class="left"></div> -->
 					<div class="right"></div>
 				</a>
 
@@ -73,41 +73,39 @@
 
 	<div class="project-content">
 
-	<!-- 	<img class="project-pictures" alt="indigo platforms" src="img/indigo/platform.jpg"> -->
+		<div class="project-wrapper">
+			<a href="img/indigo/platform.jpg" data-lightbox="indigo-platforms" data-title="">
+				<img class="project-pictures" alt="indigo platforms" src="img/indigo/platform.jpg">
+			</a>
 
-		<a href="img/indigo/platform.jpg" data-lightbox="indigo-platforms" data-title="">
-			<img class="project-pictures" alt="indigo platforms" src="img/indigo/platform.jpg">
-		</a>
+			<h2>Rediscover Indigo</h2>
+			<p>Rediscover Indigo is a mobile and web platform, designed to allow authors to showcase unpublished work and for readers to discover, support, and help bring their stories to the market.</p>
 
-		<h2>Rediscover Indigo</h2>
-		<p>Rediscover Indigo is a mobile and web platform, designed to allow authors to showcase unpublished work and for readers to discover, support, and help bring their stories to the market.</p>
-
-		<h3>My Role</h3>
-		<p>Rediscover Indigo was a project done in five weeks. For the first three weeks, I led the ideation and creation of the project including the interaction and user experience of the platform. On the last two weeks, I shifted to a more technical role, creating the motion graphics of the UI with AfterEffects and Premiere Pro.</p>
-
-		<div class="col-1of2 skills">
-			<h3>Collaborators</h3>
-			<p>Michaela Tsumura</p>
-			<p>Vanessa Liu</p>
-			<p>Richard Hoang</p>
-			<p>Naixin Zhang</p>
-			<p>Mandy Cheung</p>
-		</div>
-
-		<!-- <div class="col-1of3 skills">
 			<h3>My Role</h3>
-			<p>Co-Team Manager</p>
-			<p>Content Creator</p>
-			<p>Video Producer Assistant</p>
-		</div> -->
+			<p>Rediscover Indigo was a project done in five weeks. For the first three weeks, I led the ideation and creation of the project including the interaction and user experience of the platform. On the last two weeks, I shifted to a more technical role, creating the motion graphics of the UI with AfterEffects and Premiere Pro.</p>
 
-		<div class="col-1of2 skills">
-			<h3>Skills Used</h3>
-			<p>Illustrator</p>
-			<p>Photoshop</p>
-			<p>Aftereffects</p>
-			<p>Premiere Pro</p>
+			<div class="col-1of2 skills">
+				<h3>Collaborators</h3>
+				<p>Michaela Tsumura</p>
+				<p>Vanessa Liu</p>
+				<p>Richard Hoang</p>
+				<p>Naixin Zhang</p>
+				<p>Mandy Cheung</p>
+			</div>
+
+			<div class="col-1of2 skills">
+				<h3>Skills Used</h3>
+				<p>Illustrator</p>
+				<p>Photoshop</p>
+				<p>Aftereffects</p>
+				<p>Premiere Pro</p>
+			</div>
 		</div>
+
+			<h3>Slides and Process Book</h3>
+			<a class="redirectButton" href="img/indigo/indigo-presentation.pdf">Slides</a>
+			<a class="redirectButton" href="img/indigo/processbook.pdf">Process Book</a>
+
 
 
 		<iframe src="https://player.vimeo.com/video/125221689" title="videotrailer"></iframe>
@@ -115,7 +113,7 @@
 
 
 		<h3>Indigo's Revenue from 2011 - 2014</h3>
-		<a href="img/indigo/businessproblem2.jpg" data-lightbox="indigoproblem" data-title="">
+		<a href="img/indigo/businessproblem.jpg" data-lightbox="indigoproblem" data-title="">
 			<img class="project-pictures" alt="businessproblem" src="img/indigo/businessproblem.jpg">
 		</a>
 
@@ -194,13 +192,7 @@
 			<img class="project-pictures" alt="support" src="img/indigo/customerjourneymapping.JPG">
 		</a>
 
-		<h3>Slides and Process Book</h3>
-		<a href="img/indigo/indigo-presentation.pdf">
-			<h2>Link to our slides</h2>
-		</a>
-		<a href="img/indigo/processbook.pdf">
-			<h2>Link to our processbook</h2>
-		</a>
+
 
 
 		<a class="backtotop2" href="">
@@ -245,6 +237,3 @@
   	</div>
 	</body>
 </html>
-
-
-

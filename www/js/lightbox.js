@@ -1,3 +1,4 @@
+
 /*!
  * Lightbox v2.8.1
  * by Lokesh Dhakar
@@ -9,7 +10,6 @@
  * Released under the MIT license
  * https://github.com/lokesh/lightbox2/blob/master/LICENSE
  */
-
 // Uses Node, AMD or browser globals to create a module.
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
